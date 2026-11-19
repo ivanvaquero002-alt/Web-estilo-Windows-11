@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería | Windows 11</title>
+        <link rel="icon" href="img/carpeta-imagen.png">
+        <style>
+            body {
+                margin: 0;
+                padding: 24px;
+                font-family: system-ui, -apple-system, sans-serif;
+                line-height: 1.5;
+                color: #1f2937;
+                background: #f3f4f6;
+            }
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            header {
+                margin-bottom: 24px;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-top: 12px;
+            }
+            nav a {
+                color: #0067c0;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 16px;
+            }
+            .card {
+                background: #ffffff;
+                padding: 14px;
+                border-radius: 10px;
+                border: 1px solid #e5e7eb;
+            }
+            .card img {
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 10px;
+            }
+            .card h2 {
+                margin: 0 0 4px;
+                font-size: 1.05rem;
+            }
+            .card p {
+                margin: 0;
+                color: #4b5563;
+                font-size: 0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Galería</h1>
+                <p>Imágenes guardadas en la carpeta del proyecto.</p>
+                <nav aria-label="Navegación principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="Hardware.html">Hardware</a>
+                    <a href="Redes.html">Redes</a>
+                    <a href="Galeria.html">Galería</a>
+                    <a href="Copilot.html">Copilot</a>
+                </nav>
+            </header>
+            <section class="gallery" aria-label="Imágenes">
+                <article class="card">
+                    <img src="img/windows-11-morado-abstracto.avif" alt="Fondo abstracto morado de Windows 11">
+                    <h2>Windows 11</h2>
+                    <p>Fondos y escritorio</p>
+                </article>
+                <article class="card">
+                    <img src="img/pc-config.png" alt="Equipo de sobremesa">
+                    <h2>Estación de trabajo</h2>
+                    <p>Hardware</p>
+                </article>
+                <article class="card">
+                    <img src="img/futuristic-car-illustration.avif" alt="Ilustración de un coche futurista">
+                    <h2>Ilustración futurista</h2>
+                    <p>Diseño digital</p>
+                </article>
+                <article class="card">
+                    <img src="img/pexels-acev.avif" alt="Fotografía de paisaje urbano">
+                    <h2>Paisaje urbano</h2>
+                    <p>Fotografía</p>
+                </article>
+                <article class="card">
+                    <img src="img/pro-display-xdr.png" alt="Monitor profesional">
+                    <h2>Pantalla profesional</h2>
+                    <p>Dispositivos</p>
+                </article>
+                <article class="card">
+                    <img src="img/windows-11.png" alt="Icono de Windows 11">
+                    <h2>Escritorio Windows</h2>
+                    <p>Iconos del sistema</p>
+                </article>
+                <article class="card">
+                    <img src="img/ps5.png" alt="Consola de videojuegos">
+                    <h2>Consola</h2>
+                    <p>Entretenimiento</p>
+                </article>
+                <article class="card">
+                    <img src="img/phone.png" alt="Teléfono móvil">
+                    <h2>Teléfono móvil</h2>
+                    <p>Dispositivos</p>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

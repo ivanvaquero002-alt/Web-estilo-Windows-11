@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hardware | Windows 11</title>
+        <link rel="icon" href="img/hardware.png">
+        <style>
+            body {
+                margin: 0;
+                padding: 24px;
+                font-family: system-ui, -apple-system, sans-serif;
+                line-height: 1.5;
+                color: #1f2937;
+                background: #f3f4f6;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            header {
+                margin-bottom: 24px;
+            }
+            nav {
+                display: flex;
+                gap: 16px;
+                margin-top: 12px;
+            }
+            nav a {
+                color: #0067c0;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .hero {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #e5e7eb;
+                margin-bottom: 28px;
+            }
+            .hero img {
+                width: 140px;
+                height: auto;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 16px;
+            }
+            .card {
+                background: #ffffff;
+                padding: 18px;
+                border-radius: 10px;
+                border: 1px solid #e5e7eb;
+            }
+            .card img {
+                width: 48px;
+                height: 48px;
+                object-fit: contain;
+                margin-bottom: 8px;
+            }
+            .card h3 {
+                margin: 0 0 6px;
+                font-size: 1.1rem;
+            }
+            .card p {
+                margin: 0 0 8px;
+                color: #4b5563;
+                font-size: 0.95rem;
+            }
+            .spec {
+                font-size: 0.85rem;
+                font-weight: 600;
+                color: #0067c0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Hardware</h1>
+                <p>Piezas habituales de un ordenador y para qué sirve cada una.</p>
+                <nav aria-label="Navegación principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="Hardware.html">Hardware</a>
+                    <a href="Redes.html">Redes</a>
+                    <a href="Galeria.html">Galería</a>
+                </nav>
+            </header>
+            <section class="hero">
+                <img src="img/pc-config.png" alt="Ordenador configurado">
+                <div>
+                    <h2>Cada pieza tiene su función</h2>
+                    <p>El procesador realiza los cálculos y las unidades de almacenamiento guardan el sistema, los programas y tus archivos.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Componentes</h2>
+                <div class="grid">
+                    <article class="card">
+                        <img src="img/CPU.png" alt="Procesador">
+                        <h3>Procesador</h3>
+                        <p>Ejecuta las instrucciones de los programas.</p>
+                        <span class="spec">CPU</span>
+                    </article>
+                    <article class="card">
+                        <img src="img/HDD.png" alt="Disco duro">
+                        <h3>Disco duro</h3>
+                        <p>Guarda archivos y programas en un disco magnético.</p>
+                        <span class="spec">HDD</span>
+                    </article>
+                    <article class="card">
+                        <img src="img/SSD.png" alt="SSD">
+                        <h3>SSD</h3>
+                        <p>Almacena datos en memoria flash y no tiene piezas móviles.</p>
+                        <span class="spec">Unidad de estado sólido</span>
+                    </article>
+                    <article class="card">
+                        <img src="img/M2-ssd.png" alt="SSD M.2">
+                        <h3>SSD M.2</h3>
+                        <p>Una unidad compacta que se instala en la placa base.</p>
+                        <span class="spec">Formato M.2</span>
+                    </article>
+                    <article class="card">
+                        <img src="img/USB.png" alt="Memoria USB">
+                        <h3>Memoria USB</h3>
+                        <p>Sirve para guardar y pasar archivos entre dispositivos.</p>
+                        <span class="spec">Almacenamiento extraíble</span>
+                    </article>
+                    <article class="card">
+                        <img src="img/MicroSD.png" alt="Tarjeta microSD">
+                        <h3>Tarjeta microSD</h3>
+                        <p>Una tarjeta pequeña para ampliar el almacenamiento.</p>
+                        <span class="spec">Memoria extraíble</span>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
